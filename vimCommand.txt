@@ -1,0 +1,90 @@
+
+ Learn about Vim Command:
+-------------------------->
+
+        1) Check Vim installed or not 
+                --> Command : vim --version     (for version Check)
+        2) If not installed 
+                --> Command : apt update      (for update  applications)
+                --> Command : apt install -y vim      (for install vim)
+        3) Create new file and edit 
+                --> Command : vim + fileName with ext      (learnVim.txt)
+        4) To write something via Vim in a file 
+                --> Command : go to insert mode : press i
+        5) Write something and save and exit 
+                --> Command :  :wq
+        6) Quit without saving 
+                --> Command : :q!
+        7) Go to bottom line 
+                --> Command : G
+        8) Go to top line 
+                --> Command : gg or :1
+        9) Reverse & Forward Search in file:
+                First exit all modes: press Esc multiple times
+                Forward search : 
+                    --> Command : /word then press n to traverse (shortcut : *word)
+                Reverse search :
+                    --> Command : ?word then press n to traverse (shortcut : #word)
+       10) Replacing a word in a file 
+                --> Command : :%s/word1/word2/g  (g means global)
+       11) Undo and Redo in file:
+                For undo : 
+                    --> Command : u
+                For undo all changes :
+                    --> Command :e!
+                For redo :
+                    --> Command : Control + r
+       12) Navigate from current line to previous new line 
+                --> Command : O
+       13) Navigate from current line to next new line 
+                --> Command : o
+       14) Edit in a line:
+                Navigate to first of line : --> Command : I
+                Navigate to end of line : --> Command : A
+       15) Delete single character at cursor position 
+                --> Command : x
+       16) Replace a character:
+                Place cursor on character to replace
+                --> Command : Press r and then the new character
+       17) Cut-Paste and Copy-Paste:
+                Cut:
+                Delete and cut a line 
+                    --> Command : dd
+                Delete multiple lines 
+                    --> Command : linenum + dd (e.g., 18dd)
+                Paste:
+                Paste below current line 
+                    --> Command : p
+                Paste above current line 
+                    --> Command : P
+                Copy:
+                Select portion 
+                    --> Command : v (visual) + arrow keys
+                Select full line 
+                    --> Command : V
+                --> Press y to copy
+       18) Set line number in file (temporary change):
+                Enable : --> Command :  :set nu
+                Disable : --> Command :set nonu
+       19) Jump to a specific line number:
+                --> Command :   :linenumber (e.g., :15)
+       20) Working with multiple files:
+                Open multiple files split: --> Command :  vim -o file1 file2
+                Move between files : --> Command :  Control + ww
+                Compare two files: --> Command :   vim -d file1 file2
+       21) Save file with different name:
+                --> Command : :w newname.txt
+       22) Open help for a command inside Vim:
+                --> Command : :help command  (e.g., :help :w)
+       23) Enable syntax highlighting:
+                --> Command : :syntax on
+       24) Highlight search results:
+                --> Command : :set hlsearch
+       25) Remove search highlight:
+                --> Command : :noh
+       26) Delete a full word:
+                --> Command : dw  (delete word from cursor)
+       27) Delete till end of line:
+                --> Command : D
+       28) Repeat last command:
+                --> Press : .
