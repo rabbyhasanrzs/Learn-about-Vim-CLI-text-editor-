@@ -24,7 +24,7 @@ Features :
  Syntax highlighting    -------------> Built-in support for many programming languages                          
  Cross-platform         -------------> Available on Linux, macOS, Windows                                       
  Remote editing         -------------> Works well over SSH                                                      
- Search and Replace     -------------> Powerful commands like `:%s/old/new/g`                                   
+ Search and Replace     -------------> Powerful commands like :%s/old/new/g                                   
  Macros and registers   -------------> Automate repetitive tasks                                                
 
 
